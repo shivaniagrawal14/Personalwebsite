@@ -1,12 +1,13 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import Illustration from './illustration.inline.svg';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, subtitle, cta, heroimg } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -24,12 +25,12 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Row>
+        <Row className="heroRow">
           <Col lg={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <h1 className="hero-title">
                 {title || 'Hi, my name is'}{' '}
-                <span className="text-color-main">{name || 'Shivani'}</span>
+                <span className="text-color-main">{name || 'Shivani Agrawal'}</span>
                 <br />
                 {subtitle || "I'm a Analyst."}
               </h1>
@@ -45,7 +46,9 @@ const Header = () => {
             </Fade>
           </Col>
           <Col lg={6} sm={12}>
-            <img src="images/por.svg" alt="img" className="hero-image" />
+            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+              <Illustration className="hero-image" />
+            </Fade>
           </Col>
         </Row>
       </Container>

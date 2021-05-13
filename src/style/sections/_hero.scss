@@ -1,7 +1,11 @@
 .hero-image {
-  width: 70%;
+  width: 100%;
 }
-
+.heroRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #hero {
   min-height: 100vh;
   height: 100vh;

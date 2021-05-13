@@ -13,6 +13,7 @@ export const heroData = {
   name: '',
   subtitle: '',
   cta: '',
+  heroimg: 'stock.jpg',
 };
 
 // ABOUT DATA
