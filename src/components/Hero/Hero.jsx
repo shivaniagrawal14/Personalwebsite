@@ -26,11 +26,12 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Row className="heroRow">
-          <Col lg={6} sm={12}>
+          <Col className="cocol">
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <h1 className="hero-title">
-                {title || 'Hi, my name is'}{' '}
-                <span className="text-color-main">{name || 'Shivani Agrawal'}</span>
+                {title || 'Hi,'} <span className="small-title">my name is</span>
+                <br />
+                <span className="text-color-main big-title">{name || 'Shivani Agrawal'}</span>
                 <br />
                 {subtitle || "I'm a Analyst."}
               </h1>
@@ -43,11 +44,6 @@ const Header = () => {
                   </Link>
                 </span>
               </p>
-            </Fade>
-          </Col>
-          <Col lg={6} sm={12}>
-            <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <Illustration className="hero-image" />
             </Fade>
           </Col>
         </Row>
