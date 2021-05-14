@@ -25,7 +25,7 @@
 
   background-size: cover;
   background-repeat: no-repeat;
-  background: url('../../src/assets/cool-background.jpg');
+  background: url('../../src/assets/cool-background.svg');
   background-position: center;
   background-size: cover;
 
@@ -39,6 +39,7 @@
 
   .big-title {
     font-size: 7.5rem;
+    color: white !important;
   }
   .cocol {
     display: flex;

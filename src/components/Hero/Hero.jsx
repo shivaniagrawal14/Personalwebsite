@@ -31,7 +31,7 @@ const Header = () => {
               <h1 className="hero-title">
                 {title || 'Hi,'} <span className="small-title">my name is</span>
                 <br />
-                <span className="text-color-main big-title">{name || 'Shivani Agrawal'}</span>
+                <span className="big-title">{name || 'Shivani Agrawal'}</span>
                 <br />
                 {subtitle || "I'm an Analyst."}
               </h1>
