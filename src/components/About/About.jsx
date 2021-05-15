@@ -39,16 +39,9 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'I am a Analyst, with previous experience as an IT Business Data Analyst, and have a passion for managing the data and a relentless drive for continuous improvement in all of my endeavors.'}
+                    'Since I was young, I have always enjoyed solving puzzles, so that is how I look at big data sets: to me it is one big puzzle I want to solve. Finding patterns nobody else sees is the challenge to me. I am an insanely curious person who always seek out to meet new people with unique interests and passionate about technology and its impact on the future of our society. I love to travel and explore different parts of the world. Over the past few years, I have developed an extensive skill set in python, SQL, R programming, Power BI, Tableau, Excel, SAP, and PowerPoint to prepare for a future career in the tech industry as a Business Data Analyst where I also gained the knowledge in business intelligence, project management, and technical writing.'}
                 </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'A curious professional soaking up as much knowledge and practice as I can in an attempt to perfect my craft. I have experience using Python, R, Excel, Tableau, SAS, Javascript, SQL, PowerPoint, ETL and I have just started diving into  deep knowledge of Regresssion Analysis and Visualizations.'}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphThree ||
-                    'In addition to being Analyst, I have broad interests including science education, management and product management, project management, agile methodology, and writing for both scientific and general audiences.'}
-                </p>
+
                 {resume && (
                   <span className="d-flex mt-3">
                     <a

@@ -4,7 +4,7 @@ const data = [
     info:
       'Developed various model of regression to determine the prediction of an application before its launch on the platform. Built a User Interface consisting of visualization charts and various graph plots using R',
     repo: 'https://github.com/shivaniagrawal14/Google-Playstore-Analysis',
-    img: 'store.webp',
+    img: 'custom.png',
   },
   {
     title: 'Covid-19-Analysis',

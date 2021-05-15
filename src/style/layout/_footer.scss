@@ -68,3 +68,13 @@
     transform: translateY(-2px);
   }
 }
+.certificaiton-card {
+  cursor: pointer;
+  transform: translateY(1px);
+  transition: all 0.2s ease-in !important;
+}
+
+.certificaiton-card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(100, 100, 111, 0.2) 10px 7px 29px 0px !important;
+}

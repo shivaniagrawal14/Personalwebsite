@@ -4,8 +4,10 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-
+import Certification from './Certifications/certification';
+import Education from './Education/education';
 import { PortfolioProvider } from '../context/context';
+import 'semantic-ui-css/semantic.min.css';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
@@ -28,7 +30,10 @@ function App() {
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
       <Hero />
       <About />
+
+      <Education />
       <Projects />
+      <Certification />
       <Contact />
       <Footer />
     </PortfolioProvider>

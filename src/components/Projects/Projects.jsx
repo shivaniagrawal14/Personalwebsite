@@ -25,6 +25,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <Container>
+        <div className="line"></div>
         <div className="project-wrapper">
           <Title title="Projects" />
           {Data.map((project) => {
